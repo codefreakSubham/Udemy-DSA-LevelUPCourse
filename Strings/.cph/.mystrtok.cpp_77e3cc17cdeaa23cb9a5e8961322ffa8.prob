@@ -1,0 +1,1 @@
+{"name":"Local: mystrtok","url":"e:\\Coding_Projects Stuffs\\Udemy-DSA Level Up\\Strings\\mystrtok.cpp","tests":[{"id":1623160402426,"input":"hello my name is subham","output":"hello\nmy\nname\nis\nsubham"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"e:\\Coding_Projects Stuffs\\Udemy-DSA Level Up\\Strings\\mystrtok.cpp","group":"local","local":true}

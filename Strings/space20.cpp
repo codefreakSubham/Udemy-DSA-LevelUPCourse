@@ -9,18 +9,36 @@
 #include<bits/stdc++.h>
 using namespace std;
 
-string replace(string s)
+string replace(char *arr)
 {
 
-    
+    int spaces = 0;
+    for(int i = 0; i < strlen(arr); i++){
+        if(arr[i] == ' ')
+            spaces++;
+    }
 
+    int idx = strlen(arr) + 2*spaces;
+    arr[idx] = '\0';
+    idx--;
 
-
+    for(int i = strlen(arr) -1; i >= 0; i--){
+        if(arr[i] == ' '){
+            arr[idx--] = '0';
+            arr[idx--] = '2';
+            arr[idx--] = '%';
+        }
+        else{
+            arr[idx] = arr[i];
+            idx--;
+        }
+    }
 }
 
 int main()
 {
-    string s;
-    cin>>s;
-    cout<<replace(s);
+    char arr[1000];
+    cin.getline(arr, 1000);
+    replace(arr);
+    cout<<arr;
 }
